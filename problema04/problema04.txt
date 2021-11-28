@@ -1,0 +1,52 @@
+//Generar una solución que permita ingresar jugadores de fútbol; 
+//por cada jugador se debe solicitar:
+//Nombre el jugador
+//Posición en el campo de juego
+//Edad
+//Estatura
+//El ciclo de ingreso de información deberá terminar cuando el usuario lo decida. 
+//Se debe imprimir el siguiente reporte (usar una cadena de acumulación):
+
+//Listado de Jugadores
+
+//Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+//Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+//Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+//Ángel Mena -Delantero-, edad 32, estatura 1.75
+//Michael Estrada -Delantero-, edad 27, estatura 1.93 
+//Promedio de edades: 26.8 Promedio de estaturas: 1.87
+
+1.Inicio
+2.nombre, x (1000) [{A-Z},{a-z}, {BS}, {´}]
+3.posicion, x (100) [{A-Z},{a-z}, {BS}, {´}]
+4.edad, i[0,n]
+5.estatura, d[0,n]
+6.salida, x(10)[{a-z}]
+7.contador <--0
+8.sumaEdad <--0
+9.sumaEstatura <--0
+10.cadena <-- ""
+
+11.Escribir "Ingrese el nombre del jugador"//Alexander Dominguez 
+12.Leer nombre
+13.Escribir "Ingrese la posición en la que juega"//arquero
+14.Leer posicion
+15.Escribir "Ingrese la edad del jugador"//32
+16.Leer edad
+17.Escribir "Ingrese la estatura del jugador"//1.95
+18.Leer estatura
+
+19.contador<-- contador+1//0+1
+20.sumaEdad <-- sumaEdad + edad//0+32
+21.sumaEstatura<-- sumaEstatura+ estatura//0+1.95
+22.cadena<-- nombre +""+ "-"+ posicion + "-" + "," + "" + edad +""+ "," + "" + 
+				estatura + \n 
+//Alexander Dominguez -arquero-, 32, 1.95
+//Xavier Arreaga -Defensa-, 24, 1.85
+//Moisés Caicedo -Mediocentro-, 19, 1.88
+//Ángel Mena -Delantero-, 32, 1.75 
+//Michael Estrada -Delantero-, 27, 1.93
+
+23.Escribir "Escriba (si) para culminar el proceso"
+24.Leer salida
+25.Fin

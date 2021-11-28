@@ -1,0 +1,20 @@
+//Generar e imprimir la siguiente serie:
+//+1/1+1/3+1/5+1/7+1/9
+
+1. Inicio
+2. limite, i[0,n] <-- 9
+3. numerador, i[0,n] <-- 1
+4. denominador, i[0,n] <-- 1
+5. cadena, x(1000)[{0-9},{BS,/}] <-- ""
+6. positivo, x(1) [{+}]
+
+7. Para(denominador <-- 1, denominador <= limite, 2) haga
+8.		cadena <-- cadena + positivo + numerador + "/" + denominador
+		//+1/1
+		//+1/1+1/3
+		//+1/1+1/3+1/5
+		//+1/1+1/3+1/5+1/7
+		//+1/1+1/3+1/5+1/7+1/9
+15. Fin_Para
+16. Escribir cadena //+1/1+1/3+1/5+1/7+1/9
+17. Fin
